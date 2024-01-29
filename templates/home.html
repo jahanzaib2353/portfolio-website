@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center">Welcome to my Portfolio Website</h1>
+        <div class="text-center">
+            <img src="{{ url_for('static', filename='images/rsz_1profile_pic.jpg') }}" alt="Profile Image" class="img-thumbnail rounded-circle" style="width: 200px;">
+        </div>
+        <h1 class='text-center'><b>Building the Future with Python and AI</b></h1>
+        <p>I'm not just a software engineering student – I'm a pioneer exploring the bleeding edge of Artificial Intelligence and Langchain technology. My passion lies in pushing the boundaries of what's possible by blending creativity, logic, and cutting-edge tools like OpenAI.</p>
+
+        <p>Join me on this exciting ride, and let's build the future together!</p>
+
+
+        <!-- Skills section with thumbnails and links -->
+        <h2 class="text-center">My Skills</h2>
+
+<div class="row justify-content-center">
+  <div class="col-md-9 mb-4">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/python.jpeg') }}" alt="Skill 3" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Python And AI</h5>
+        <p class="card-text">Let's introduce innovative solutions using AI to your Bussiness problems. </p>
+        <a href="{{url_for('skills')}}" class="btn btn-primary">My Stacks</a>
+      </div>
+    </div>
+  </div>
+</div>
+        
+            
+
+           
+
+            
+        <!-- End of Skills section -->
+
+    </div>
+{% endblock %}

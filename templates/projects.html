@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects Page{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>My Projects</h1>
+        <div class="row">
+            {% for project in projects %}
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="{{ project.image }}" class="card-img-top" alt="{{ project.title }}">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ project.title }}</h2>
+                            <p class="card-text">{{ project.description }}</p>
+                            <a href="{{ project.url }}" class="btn btn-primary" target="_blank">visit</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+    <h3 class="text mb-4 mt-4">Github</h3>
+        <p>You can see more projects on my <a href="https://github.com/jahanzaib2353" target="_blank">Github</a>.</p>
+{% endblock %}

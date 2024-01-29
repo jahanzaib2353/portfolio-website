@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Skills Page{% endblock %}
+
+{% block content %}
+    <div class="container text-center">
+        <h1>Skills</h1>
+
+        
+        <!-- Web Development Section -->
+        <h2>Web Development</h2>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-12">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="{{ url_for('static', filename='images/django.jpg') }}" alt="Django" class="mr-3 mb-3" width="200" height="200">
+                    <img src="{{ url_for('static', filename='images/frontend.jpg') }}" alt="Frontend Development" class="mr-3 mb-3" width="200" height="200">
+                    <img src="{{ url_for('static', filename='images/laravel.jpg') }}" alt="Laravel" class="mr-3 mb-3" width="200" height="200">
+                    <img src="{{ url_for('static', filename='images/wordpress1.jpg') }}" alt="WordPress" class="mr-3 mb-3" width="200" height="200">
+                </div>
+                <p><b>Django:</b> A powerful web framework for building web applications using Python.</p>
+                <p><b>Frontend Development:</b> Skills in HTML, CSS, and JavaScript for creating attractive and interactive user interfaces.</p>
+                <p><b>Laravel:</b> A popular PHP framework for developing web applications with a clean and elegant syntax.</p>
+                <p><b>WordPress:</b> Building websites and blogs using the widely-used WordPress content management system.</p>
+                <!-- Add more web development skills images and descriptions here -->
+            </div>
+            <!-- Add more web development skills divs here -->
+        </div>
+        <!-- End of Web Development Section -->
+
+        <!-- Data Analysis Section -->
+        <h2>Data Analysis</h2>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-12">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="{{ url_for('static', filename='images/pandas.jpg') }}" alt="Pandas" class="mr-3 mb-3" width="200" height="200">
+                    <img src="{{ url_for('static', filename='images/scikit.jpg') }}" alt="Scikit-learn" class="mr-3 mb-3" width="200" height="200">
+                    <img src="{{ url_for('static', filename='images/matplot.jpg') }}" alt="Matplotlib" class="mr-3 mb-3" width="200" height="200">
+                    <img src="{{ url_for('static', filename='images/numpy.jpg') }}" alt="NumPy" class="mr-3 mb-3" width="200" height="200">
+                </div>
+                <p><b>Pandas:</b> A powerful data manipulation and analysis library for Python.</p>
+                <p><b>Scikit-learn:</b> A machine learning library for various algorithms and tools.</p>
+                <p><b>Matplotlib:</b> A plotting library for creating visualizations in Python.</p>
+                <p><b>NumPy:</b> A fundamental package for numerical computations in Python.</p>
+                <!-- Add more data analysis skills images and descriptions here -->
+            </div>
+            <!-- Add more data analysis skills divs here -->
+        </div>
+        <!-- End of Data Analysis Section -->
+
+        <!-- API Integration Section -->
+        <h2>Api Integration</h2>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-12">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <img src="{{ url_for('static', filename='images/streamlit.jpg') }}" alt="Streamlit" class="mr-3 mb-3" width="200" height="200">
+                    <img src="{{ url_for('static', filename='images/gradio.jpg') }}" alt="Gradio" class="mr-3 mb-3" width="200" height="200">
+                </div>
+                <p><b>Streamlit:</b> A Python library for creating interactive web applications for data science.</p>
+                <p><b>Gradio:</b> A Python library for quickly creating UIs for machine learning models.</p>
+                <!-- Add more API integration skills images and descriptions here -->
+            </div>
+            <!-- Add more API integration skills divs here -->
+        </div>
+        <h2 class="card-title">Python And AI</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-9 mb-4">
+              <div class="card">
+                <img src="{{ url_for('static', filename='images/langchain.png') }}" alt="Skill 3" class="card-img-top">
+                <div class="card-body">
+                  
+                 
+                </div>
+              </div>
+            </div><br>
+        <!-- End of API Integration Section -->
+
+        <!-- Add any other relevant content here -->
+    </div>
+{% endblock %}
